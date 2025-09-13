@@ -1,6 +1,5 @@
 "use client";
 import { TypewriterEffect } from "../ui/typewriter-effect";
-import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 export function TypewriterEffectSmoothDemo() {
   const words = [
@@ -12,7 +11,7 @@ export function TypewriterEffectSmoothDemo() {
     },
     {
       text: "farm2home",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-green-400 dark:text-green-400",
     },
     {
       text: "traceability",
@@ -27,13 +26,16 @@ export function TypewriterEffectSmoothDemo() {
       <TypewriterEffect words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 m-10 space-x-0 md:space-x-4\">
         <div className="flex justify-center text-center m-10">
-          <HoverBorderGradient
-            containerClassName="rounded-full"
-            as="button"
-            className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-          >
-            <span>EXPLORE</span>
-          </HoverBorderGradient>
+
+
+      <button className="relative inline-flex h-16 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 py-2 text-lg font-semibold text-white backdrop-blur-3xl">
+          Get Started
+        </span>
+      </button>
+
+
         </div>
       </div>
       <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  max-w-xl text-center">
