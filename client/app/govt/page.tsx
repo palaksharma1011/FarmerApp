@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Bell, Truck, Users, Shield, MapPin, Thermometer, Scale, CircleCheck as CheckCircle2, TriangleAlert as AlertTriangle } from 'lucide-react';
 import Link from 'next/link';

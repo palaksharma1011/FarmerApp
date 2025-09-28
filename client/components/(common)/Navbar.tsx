@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { FaBars, FaTimes, FaHome, FaShoppingCart, FaUser, FaInfoCircle } from "react-icons/fa";
+import { FaBars, FaTimes, FaHome } from "react-icons/fa";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

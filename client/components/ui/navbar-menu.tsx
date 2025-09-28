@@ -107,7 +107,7 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, ...rest }: React.AnchorHTMLAttributes<HTMLAnchorElement> & { children: React.ReactNode }) => {
   return (
     <a
       {...rest}

@@ -77,7 +77,7 @@ export default function InquiryPage() {
 
     // Initialize speech recognition
     if (typeof window !== 'undefined' && 'webkitSpeechRecognition' in window) {
-      const SpeechRecognition = (window as any).webkitSpeechRecognition;
+      const SpeechRecognition = (window as unknown as { webkitSpeechRecognition: typeof SpeechRecognition }).webkitSpeechRecognition;
       recognitionRef.current = new SpeechRecognition();
       if (recognitionRef.current) {
         recognitionRef.current.continuous = true;

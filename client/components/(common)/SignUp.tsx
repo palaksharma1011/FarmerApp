@@ -17,7 +17,7 @@ export default function SignupPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState<{[key: string]: string}>({});
   const [isAadhaarVerified, setIsAadhaarVerified] = useState(false);
-  const [isBlockchainConnected, setIsBlockchainConnected] = useState(false);
+  const [, setIsBlockchainConnected] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {

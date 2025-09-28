@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Building2, LogOut, Bell, Search, Truck, Users, Shield, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle2, Circle as XCircle, Clock, MapPin, Thermometer, Scale, Eye, Filter } from 'lucide-react';
+import { LogOut, Bell, Search, Truck, Users, Shield, TriangleAlert as AlertTriangle, CircleCheck as CheckCircle2, Circle as XCircle, Clock, MapPin, Thermometer, Scale, Eye, Filter } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 

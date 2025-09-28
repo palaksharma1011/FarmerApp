@@ -3,9 +3,9 @@ import React from "react";
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
 import { TypewriterEffectSmoothDemo } from "./landingPage/HeroText";
 import { CardHoverEffectDemo } from "./landingPage/chooseUser";
-import { InfiniteMovingCardsDemo } from "./landingPage/results";
-import { HeroParallaxDemo } from "./landingPage/Benefits";
-import { WobbleCardDemo } from "./landingPage/advFeatures";
+// import { InfiniteMovingCardsDemo } from "./landingPage/results";
+// import { HeroParallaxDemo } from "./landingPage/Benefits";
+// import { WobbleCardDemo } from "./landingPage/advFeatures";
 
 const Hero = () => {
   return (

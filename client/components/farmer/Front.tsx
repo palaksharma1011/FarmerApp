@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Mic, Shield, IndianRupee, Users, Camera, Phone, MapPin, TrendingUp, CheckCircle, ArrowRight, Menu, X, Star, Clock, Globe, User, LogIn, UserPlus } from 'lucide-react';
+import { Mic, Shield, IndianRupee, Users, Camera, Phone, MapPin, TrendingUp, CheckCircle, ArrowRight, Menu, X, Star, Clock, Globe, LogIn, UserPlus } from 'lucide-react';
 import Link from "next/link";
 
 
