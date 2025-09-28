@@ -129,6 +129,7 @@ export default function InquiryPage() {
         synthRef.current.cancel();
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const askQuestion = (questionIndex: number) => {
@@ -263,7 +264,7 @@ export default function InquiryPage() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <Badge variant={isinquiryComplete ? "default" : "secondary"}>
+              <Badge className={isinquiryComplete ? "bg-green-100 text-green-800" : "bg-gray-100 text-gray-800"}>
                 {isinquiryComplete ? "पूर्ण" : `प्रश्न ${currentQuestionIndex + 1}/${inquiry_QUESTIONS.length}`}
               </Badge>
             </div>

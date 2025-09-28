@@ -209,7 +209,7 @@ const ShaderMaterial = ({
   });
 
   const getUniforms = () => {
-    const preparedUniforms: Record<string, { value: any; type: string }> = {};
+    const preparedUniforms: Record<string, { value: unknown; type: string }> = {};
 
     for (const uniformName in uniforms) {
       const uniform = uniforms[uniformName];
@@ -279,7 +279,7 @@ const ShaderMaterial = ({
     });
 
     return materialObject;
-  }, [size.width, size.height, source, getUniforms]);
+  }, [source, getUniforms]);
 
   return (
     <mesh ref={ref}>
