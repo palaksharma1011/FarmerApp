@@ -9,7 +9,8 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
-    description: string
+    description: string;
+    link: string;
   }[];
   className?: string;
 }) => {
@@ -18,16 +19,22 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
         className
       )}
     >
       {items.map((item, idx) => (
-        <>
+        <a
+          href={item?.link}
+          key={item?.link}
+          className="relative group block p-2 h-full w-full"
+          onMouseEnter={() => setHoveredIndex(idx)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-white block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -38,6 +45,8 @@ export const HoverEffect = ({
                   opacity: 0,
                   transition: { duration: 0.15, delay: 0.2 },
                 }}
+                // FIX: Add a unique key here
+                key="hover-background"
               />
             )}
           </AnimatePresence>
@@ -45,7 +54,7 @@ export const HoverEffect = ({
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
-          </>
+        </a>
       ))}
     </div>
   );

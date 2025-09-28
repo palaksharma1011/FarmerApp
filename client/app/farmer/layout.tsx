@@ -1,21 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "../../styles/farmer.css";
-import Navbar from "@/components/farmer/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "Farmer App",
-  description: "Farmer App built with Next.js and Tailwind CSS",
+  title: "FarmBazaar - Farmer",
+  description: "Farmer App to sell and manage farm products",
+      icons: {
+    icon: "assets/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -26,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>
+        {/* <header>
             <Navbar />
-        </header>
+        </header> */}
             <main>{children}</main>       
         </body>
     </html>

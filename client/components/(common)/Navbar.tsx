@@ -24,24 +24,18 @@ export default function Navbar() {
           >
             <FaHome className="text-xl" />
           </Link>
-          <Link
+          {/* <Link
             href="/marketplace"
             className="hover:text-green-400 transition hover:scale-110"
           >
             <FaShoppingCart className="text-xl" />
           </Link>
           <Link
-            href="/profile"
+            href="/govt"
             className="hover:text-green-400 transition hover:scale-110"
           >
             <FaUser className="text-xl" />
-          </Link>
-          <Link
-            href="/about"
-            className="hover:text-green-400 transition hover:scale-110"
-          >
-            <FaInfoCircle className="text-xl" />
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -74,5 +68,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
-import { LinkPreview } from "@/components/ui/link-preview";

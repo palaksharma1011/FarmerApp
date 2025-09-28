@@ -47,6 +47,7 @@ Card.displayName = "Card";
 type Card = {
   title: string;
   src: string;
+  link : string;
 };
 
 export function FocusCards({ cards }: { cards: Card[] }) {

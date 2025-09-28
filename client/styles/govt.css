@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  background-color: whitesmoke;
+  color: black; /* so text is visible */
+}
